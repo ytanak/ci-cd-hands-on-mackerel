@@ -4,6 +4,7 @@ nav:
   - CI/CDとは: what-is-ci-cd.md
   - 使用するサービスの説明: code-series.md
   - 全体構成: architecture.md
+  - Mackerelハンズオンにバトンタッチ: hand-over.md 
   - パイプライン構築の準備: preparation.md
   - 動作確認: check-before-deploy.md
   - CodeDeploy: codedeploy.md
