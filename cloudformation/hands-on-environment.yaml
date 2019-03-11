@@ -34,8 +34,8 @@ Parameters:
     Default: t3.nano
 
   AMIId:
-    Type: AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>
-    Default: "/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2"
+    Type: String
+    Default: "ami-097473abce069b8e9"
 
   EnvironmentName:
     Description: Please enter Environment name.
@@ -529,7 +529,7 @@ Resources:
       UnhealthyThresholdCount: 5
       TargetGroupAttributes:
         - Key: deregistration_delay.timeout_seconds
-          Value: "30"
+          Value: "20"
       VpcId: !Ref VPC
 
   LoadBalancerListener:
